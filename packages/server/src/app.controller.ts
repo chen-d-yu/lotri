@@ -5,13 +5,11 @@ import { ConfigService } from '@nestjs/config';
 @Controller()
 export class AppController {
   constructor(
-    private readonly appService: AppService,
-    private readonly configService: ConfigService,
+    private readonly appService: AppService
   ) {}
 
   @Get()
   getHello(): string | undefined {
-    console.log(this.configService);
     return;
   }
 }
